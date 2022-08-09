@@ -34,4 +34,20 @@ public class Account {
             return "You don't have enough balance to withdraw $" + amount;
         }
     }
+
+    String updateName (String newName) {
+        String oldName = this.name;
+
+        this.name = newName;
+
+        return "Account name was successfully updated from " + oldName + " to " + newName;
+    }
+
+    String updateEmail (String newEmail) {
+        String oldEmail = this.email;
+
+        this.email = newEmail;
+
+        return "Account email was succesffuly updated from " + oldEmail + " to " + newEmail;
+    }
 }
